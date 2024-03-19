@@ -49,6 +49,5 @@
 		"nearest-color": "^0.4.4",
 		"tailwind-merge": "^2.2.2",
 		"tailwind-variants": "^0.2.1"
-	},
-	"packageManager": "yarn@4.1.1"
+	}
 }
