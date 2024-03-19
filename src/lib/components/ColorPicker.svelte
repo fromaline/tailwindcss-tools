@@ -1,8 +1,7 @@
 <script lang="ts">
-	import { pickedColor } from '$lib/stores'
-	import type Pickr from '@simonwep/pickr'
-	import { random } from 'colord'
 	import { onMount } from 'svelte'
+	import type Pickr from '@simonwep/pickr'
+	import { pickedColor } from '$lib/stores'
 
 	let pickerDiv: HTMLElement | null = null
 
@@ -20,9 +19,9 @@
 					useAsButton: true,
 					inline: true,
 					showAlways: true,
-					default: random().toHex(),
+					default: $pickedColor,
 					components: {
-						preview: true,
+						preview: false,
 						hue: true,
 						interaction: {
 							hex: true,
